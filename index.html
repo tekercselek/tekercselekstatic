@@ -253,20 +253,44 @@ A fent felsorolt gépek javítása mellett esztergálási és hegesztési munká
         <center><h1 style="color: #eee;">Írj nekünk üzenetet!</h1></center>
         </div>
     
-        <form id="contact" name="sentMessage" method="post" action="wp-content/themes/tekercselek/sendmail.php.html">
+
+
+
+    
+    
+    
+     
+    
+   
+    
+
+        <form id="contact" action="http://postmail.invotes.com/send"
+    method="post" id="email_form">
               <div class="row">
                 <div class="col-md-6">
                   
+                  	<script>
+                  		function osszefuz(){
+                  			$('#text').text( "Név: " + $('#name').val() + "\nEmail: " + $('#emailcim').val() + "\nTelefon: " + $('#phone').val() + "\nÜzenet: \n\n" + $('#message').val() );
+                  			
+                  		}
+                  	</script>
+                	<input type="hidden" name="subject" placeholder="Tekercselek.hu - Új üzenet" />
+                	<input type="hidden" name="access_token" value="yre0n4i4bfd0he85s4fbpvgu" />
+                	<textarea style="display:none;" name="text" id="text" placeholder="Message"></textarea>
+                	<input type="hidden" name="success_url" value="." />
+    				<input type="hidden" name="error_url" value=".?err=1" />
+
                   <div class="form-group">
-                    <input class="form-control" name="name" type="text" placeholder="Név *" >
+                    <input onkeyup="osszefuz()" class="form-control" id="name" name="name" type="text" placeholder="Név *" >
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" name="email" type="email" placeholder="Email *">
+                    <input onkeyup="osszefuz()" class="form-control" id="emailcim" name="email" type="email" placeholder="Email *">
                     <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group">
-                    <input class="form-control" name="phone" type="tel" placeholder="Telefon *">
+                    <input onkeyup="osszefuz()" class="form-control" id="phone" name="phone" type="tel" placeholder="Telefon *">
                     <p class="help-block text-danger"></p>
                   </div>
 
@@ -274,7 +298,7 @@ A fent felsorolt gépek javítása mellett esztergálási és hegesztési munká
                 <div class="col-md-6">
 
                   <div class="form-group">
-                    <textarea class="form-control" name="message" placeholder="Üzenet *" ></textarea>
+                    <textarea onkeyup="osszefuz()" class="form-control" id="message" name="message" placeholder="Üzenet *" ></textarea>
                     <p class="help-block text-danger"></p>
                   </div>
                 </div>
@@ -288,14 +312,7 @@ A fent felsorolt gépek javítása mellett esztergálási és hegesztési munká
                 type="submit" onclick="javascript:alert('Üzenet elküldve! Köszönjük a megkeresést!');">
                 ELKÜLD
                 </button>
-                  <!--<button
-                    id="sendMessageButton"
-                class="g-recaptcha btn btn-primary btn-xl text-uppercase"
-                data-sitekey="6LcGhkgUAAAAABIPDwTyelVeC4GSnSYioIQVa2q1"
-                data-callback="YourOnSubmitFn"
-                type="submit">
-                ELKÜLD
-                </button>-->
+
                 </div>
 
               </div>
