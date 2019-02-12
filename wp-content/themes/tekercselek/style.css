@@ -1,0 +1,305 @@
+/*
+Theme Name: Tekercselek.hu
+Author: Horváth Loránd
+Description: Bootstrap4 alapú egyedi fejlesztés a tekercselek.hu oldalhoz
+Version: 1.0
+Tags: bootstrap, tekercselek
+Text Domain: tekercselek
+*/
+
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* headerben a logo */
+.logo{
+    margin: 10px;
+}
+
+/* navbaron a linkek */
+.nav-link{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #eee !important;
+}
+
+.menu-item:hover{
+    background-color: #748bb1;
+}
+
+/* navbar színe */
+.navbar{
+    background-color: #37426F;
+    min-height: 60px;
+}
+
+/* főoldalon a szekciók közötti spacing */
+.rowtop{
+	padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+/* about szekcio */
+#about{
+    color: #ddd;
+}
+
+#about h1{
+    padding: 100px 0px 50px 0px;
+}
+
+#about p{
+    padding: 50px 0px 100px 0px;
+    line-height: 2;
+    font-size: x-large;
+}
+/* ----  */
+
+
+/* card */
+
+.card, .card-body{
+    background-color: rgba(255,255,255,0.5) !important;
+}
+
+.card-title, .card-text{
+    background-color: rgba(255,255,255,0) !important; 
+    padding: 10px;
+    text-align: center;
+}
+
+.card-img-top{
+
+    transition: all .2s ease-in-out;
+    
+    transform: scale(1);
+
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.card-img-top:hover{
+    transition: all .2s ease-in-out;
+
+    transform: scale(1.5);
+
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+/* ----- */
+
+
+
+.carousel{
+    width: 100%;
+    height: 70vh;
+}
+
+.carousel-item img{
+  object-fit:cover;
+  height:70vh; !important;
+  width:100%;
+}
+
+.carousel-inner h1, .carousel-inner p{
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+/* ----- */
+
+
+/* galéria  */
+.gallery-item{
+    min-width: 320px;
+}
+
+
+.fancybox-button--share{
+    display: none !important;
+}
+/* ----- */
+
+
+.page{
+    padding: 20px !important;
+    text-align: justify;
+    line-height: 2;
+    color: #444;
+}
+
+.page h1{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    margin: 5px 0px 0px 0px;
+    line-height: 17px;
+    ma rgin: 0;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+/* ----------------------------- */
+
+
+footer{
+	background-color: #aaa;
+}
+
+/* contact form */
+#contact{
+	width: 100%;
+	padding: 10vw;
+}
+#contact .-heading{
+    color:#fff
+}
+#contact .form-group{
+    margin-bottom:25px
+}
+#contact .form-group input,#contact .form-group textarea{
+    padding:20px
+}
+#contact .form-group input.form-control{
+    height:auto
+}
+#contact .form-group textarea.form-control{
+    height:248px
+}
+#contact .form-control:focus{
+    border-color:#fed136;
+    box-shadow:none
+}
+#contact ::-webkit-input-placeholder{
+    font-weight:700;
+    color:#ced4da;
+    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+}
+#contact :-moz-placeholder{
+    font-weight:700;
+    color:#ced4da;
+    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+}
+#contact ::-moz-placeholder{
+    font-weight:700;
+    color:#ced4da;
+    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+}
+#contact :-ms-input-placeholder{
+    font-weight:700;
+    color:#ced4da;
+    font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+/* ----- */
