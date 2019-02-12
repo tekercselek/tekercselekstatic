@@ -43,6 +43,7 @@ A fent felsorolt gépek javítása mellett esztergálási és hegesztési munká
 
 
 
+
 <div class="container-fluid">
 
 	<div class="row" id="header">
@@ -248,7 +249,8 @@ A fent felsorolt gépek javítása mellett esztergálási és hegesztési munká
 
 
 
-    <div class="row rowtop parallax-window" id="contactform" data-parallax="scroll" data-image-src="https://tekercselek.hu/wp-content/themes/tekercselek/shapes2.jpg" >
+    <div class="row rowtop parallax-window" id="contactform" data-parallax="scroll" data-image-src="https://tekercselek.hu/wp-content/themes/tekercselek/shapes2.jpg">
+    
         <div class="col-sm-12">
         <center><h1 style="color: #eee;">Írj nekünk üzenetet!</h1></center>
         </div>
@@ -264,59 +266,7 @@ A fent felsorolt gépek javítása mellett esztergálási és hegesztési munká
    
     
 
-        <form id="contact" action="https://cors.io/?https://postmail.invotes.com/send"
-    method="post" id="email_form">
-              <div class="row">
-                <div class="col-md-6">
-                  
-                  	<script>
-                  		function osszefuz(){
-                  			$('#text').text( "Név: " + $('#name').val() + "\nEmail: " + $('#emailcim').val() + "\nTelefon: " + $('#phone').val() + "\nÜzenet: \n\n" + $('#message').val() );
-                  			
-                  		}
-                  	</script>
-                	<input type="hidden" name="subject" placeholder="Tekercselek.hu - Új üzenet" />
-                	<input type="hidden" name="access_token" value="yre0n4i4bfd0he85s4fbpvgu" />
-                	<textarea style="display:none;" name="text" id="text" placeholder="Message"></textarea>
-                	<input type="hidden" name="success_url" value="." />
-    				<input type="hidden" name="error_url" value=".?err=1" />
-
-                  <div class="form-group">
-                    <input onkeyup="osszefuz()" class="form-control" id="name" name="name" type="text" placeholder="Név *" >
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input onkeyup="osszefuz()" class="form-control" id="emailcim" name="email" type="email" placeholder="Email *">
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="form-group">
-                    <input onkeyup="osszefuz()" class="form-control" id="phone" name="phone" type="tel" placeholder="Telefon *">
-                    <p class="help-block text-danger"></p>
-                  </div>
-
-                </div>
-                <div class="col-md-6">
-
-                  <div class="form-group">
-                    <textarea onkeyup="osszefuz()" class="form-control" id="message" name="message" placeholder="Üzenet *" ></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-
-                <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
-                  <div id="success"></div>
-                  <button
-                    id="sendMessageButton"
-                class=" btn btn-primary btn-xl text-uppercase"
-                type="submit" onclick="javascript:alert('Üzenet elküldve! Köszönjük a megkeresést!');">
-                ELKÜLD
-                </button>
-
-                </div>
-
-              </div>
-            </form>
+        <div style="margin: 0 auto;"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTekercsel%C3%A9s-P%C3%A9cs-D%C3%B6mse-J%C3%B3zsef-314512652406408&tabs=messages&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></div>
 
     </div>
 
